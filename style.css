@@ -1,46 +1,78 @@
-.container {
-    margin-left: 460px;
-    width: 400px;
-    height: auto;
+body {
+    font-family: sans-serif;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-style: dashed;
-    border-radius: 5px;
-    background-color: rgb(197, 150, 150);
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Light background */
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* White container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+.container input[type="number"] {
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width/height */
 }
 
 .button {
-    margin-left: 100px;
-    padding: auto;
-    margin-top: 2px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 15px;
-    background-color: skyblue;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
     border: none;
     border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
 #results {
-    width: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 5px;
-    border-bottom: solid;
-    border-color: green;
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(37, 22, 2);
     margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+    border-top: 2px solid #4CAF50; /* Green border */
 }
 
 .chart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    border-radius: 20px;
-    background-color:aqua;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.chart p {
+    margin: 5px 0;
+    color: #555;
 }
